@@ -1,21 +1,15 @@
 .home {
   
-  .top-header{
-    width: 880px;
-    border-bottom: 2px dashed silver;
-  }
   .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 30px 0;
 
-   
-    
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
-    }
+      .text-content {
+        width: 48%;
+        padding-right: 1%;
+      }
 
     .img-content {
       width: 48%;
@@ -23,44 +17,98 @@
       
       img {
         border-radius: 10px;
-        padding: 5% 20% 0 0;
       }
     }
-  }
-
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
-
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      width: 400px;
+      margin: 0 0 0 60px ;
     }
-
+    p {
+      width: 400px;
+      margin: 0 0 0 60px ;
+    }
     .img-content {
-      padding-right: 1%;
-      padding-left: 0;
+      width: 400px;
+      margin: 0 0 0 60px ;
+    }
+    img {
+      width: 400px;
+      
     }
   }
-
+}
+.inverse-content {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed @navigation-border;
+  .text-content {
+    padding-left: 1%;
+    padding-right: 0; 
+  }
+  .img-content {
+    padding-right: 1%;
+    padding-left: 0;
+  }
+  @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
     img {
       border-radius: 10px;
     }
   }
 
   .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    padding-top: 30px;
+    border-top: 2px dashed @navigation-border;
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn {
+        height: 60px;
+        width: 40px;
+        color: #17A2B8;
+        margin: 20px;
     }
   }
-}// home
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    p {
+      width: 400px;
+      margin: 0 0 0 60px;
+    }
+    h4 {
+      width: 400px;
+      margin: 0 0 0 60px ;
+    }
+    .btn {
+      width: 400px;
+      margin: 0 0 0 60px ;
+    }
+  }
+}
+   
+  .top-header {
+    border-bottom: 2px dashed silver;
+    h1 {
+      margin: 20px;
+  }
+    p {
+      margin: 0 0 60px;
+  }
+
+    @media @mobile {
+      width: 400px;
+      margin: 0 0 0 60px ;
+    }
+  }
+}//Home
