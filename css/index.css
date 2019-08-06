@@ -164,7 +164,7 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1700px;
+  max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
@@ -172,24 +172,26 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-bottom: 2px dashed silver;
+  border-bottom: dashed 2px #DDDDDD;
 }
 header h1 {
   margin: 10px 280px 10px 0;
 }
-.top-nav {
+header nav {
   margin: 24px 0 ;
 }
-.top-nav a {
+header nav a {
   padding: 0 20px;
   text-decoration: none;
   font-size: 1.6rem;
 }
-@media (max-width: 568px) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h1 {
+@media '(max-width: 500px)' {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header h1 {
     margin: 0 auto;
   }
 }
@@ -221,7 +223,7 @@ header h1 {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
-@media (max-width: 568px) {
+@media '(max-width: 500px)' {
   .home .content-section {
     display: flex;
     flex-direction: column;
@@ -254,7 +256,7 @@ header h1 {
   padding-right: 1%;
   padding-left: 0;
 }
-@media (max-width: 568px) {
+@media '(max-width: 500px)' {
   .home .inverse-content {
     display: flex;
     flex-direction: column-reverse;
@@ -268,29 +270,33 @@ header h1 {
   border-radius: 10px;
 }
 .home .content-pick {
-  display: flex;
-  justify-content: space-between;
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: space-between;
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
 .home .content-pick .destination .btn {
-  height: 60px;
-  width: 40px;
-  color: #17A2B8;
-  margin: 20px;
+  width: 60pxpx;
+  height: 40px;
+  background: #17A2B8;
+  border-radius: 20px;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
 }
-@media (max-width: 568px) {
+@media '(max-width: 500px)' {
   .home .content-pick {
     display: flex;
     flex-direction: column;
   }
   .home .content-pick p {
     width: 400px;
-    margin: 0 0 0 60px;
+    margin: 0 0 0 60px ;
   }
   .home .content-pick h4 {
     width: 400px;
@@ -301,17 +307,17 @@ header h1 {
     margin: 0 0 0 60px ;
   }
 }
-.home .top-header {
+.home .top-section {
   border-bottom: 2px dashed silver;
 }
-.home .top-header h1 {
-  margin: 20px;
+.home .top-section h1 {
+  margin: 20px 0 0;
 }
-.home .top-header p {
-  margin: 0 0 60px;
+.home .top-section p {
+  margin: 0 0 10px;
 }
-@media (max-width: 568px) {
-  .home .top-header {
+@media '(max-width: 500px)' {
+  .home .top-section {
     width: 400px;
     margin: 0 0 0 60px ;
   }

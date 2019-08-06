@@ -3,26 +3,28 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-bottom: 2px dashed silver;
-    h1 { 
+    border-bottom: dashed 2px #DDDDDD;
+    
+    h1 {
         margin: 10px 280px 10px 0;
     }
-}
-.top-nav {
-    margin: 24px 0 ;
-    a {
-        padding: 0 20px;
-        text-decoration: none;
-        font-size: 1.6rem;
-    }
-}
+    nav {
+        margin: 24px 0 ;
+        
+        a {
+            padding: 0 20px;
+            text-decoration: none;
+            font-size: 1.6rem;
 
-@media @mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h1 {
-        margin: 0 auto;
+        }
+    }
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            margin: 0 auto;
+        }
     }
 }
-  
